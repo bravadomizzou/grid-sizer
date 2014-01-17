@@ -1,0 +1,121 @@
+body
+    margin: 0px
+
+.gs-sizer-container 
+    width: 100%
+    height: 100%
+    padding: 22px
+
+.gs-view-container 
+    overflow: hidden
+    height: 100%
+
+.gs-inactive 
+    width: 100%
+    height: 100%
+    display: none
+    position: absolute
+    z-index: 3
+
+.gs-sizer-guide 
+    width: 100%
+    height: 100%
+    position: absolute
+    display: none
+    z-index: 3
+    background-color: grey
+    opacity: 0.9
+
+.crosshair 
+    position: relative
+    z-index: 4
+    background-color: black
+
+.guide-crosshair 
+    position: relative
+    z-index: 4
+    background-color: whitesmoke
+
+.crosshair-y, .guide-y 
+    width: 100%
+    height: 1px
+    top: 50%
+
+.crosshair-x, .guide-x 
+    height: 100%
+    width: 1px
+    left: 50%
+
+.guide-center 
+    top: -50%
+    left: 50%
+    margin-top: -22px
+    margin-left: -21px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    border: 1px solid whitesmoke
+    position: relative
+    z-index: 4
+
+.gs-quadrant-sizer 
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: white
+    position: absolute
+    z-index: 5
+    top: 50%
+    left: 50%
+    cursor: move
+    border: 2px solid grey
+
+.quadrant 
+    width: 50%
+    height: 50%
+    float: left
+    z-index: 2
+
+.q-container
+    height: 100%
+    width: 100%
+    overflow: scroll
+
+.gs-snap-container
+    display: none
+    position: absolute
+    width: 100%
+    height: 100%
+
+.gs-snap-container > * 
+    position: absolute
+    width: 44px
+    height: 44px
+    margin-left: -22px
+    margin-top: -22px
+
+.snap-center 
+    top: 50%
+    left: 50%
+    margin-left: -22px
+    margin-top: -22px
+
+.snap-top 
+    left: 50%
+
+.snap-bottom 
+    top: 100%
+    left: 50%
+
+.snap-left 
+    top: 50%
+
+.snap-right 
+    top: 50%
+    left: 100%
+
+.move-icon 
+    height: 40px
+    width: 40pxs
+    background-image: url("../../img/move.png")
+    background-size: 40px
