@@ -1,0 +1,1031 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ov",
+				"ov	overflow: ${1:hidden};"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"stats",
+				"stats_before"
+			],
+			[
+				"j",
+				"json_decode"
+			],
+			[
+				"generate",
+				"generateRows"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"Com",
+				"ComplianceArchive"
+			],
+			[
+				"snapshot",
+				"snapshot-list"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"seri",
+				"seriesData"
+			],
+			[
+				"se",
+				"seriesData"
+			],
+			[
+				"array_fil",
+				"array_filter"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"menu",
+				"menu_open"
+			],
+			[
+				"summay",
+				"summary_template"
+			],
+			[
+				"height",
+				"heightOffset"
+			],
+			[
+				"char",
+				"chartTitle"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "grid-sizer.js",
+			"settings":
+			{
+				"buffer_size": 9847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/grid-sizer.css",
+			"settings":
+			{
+				"buffer_size": 2725,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Raymond/Sites/qc2/app/View/Compare/dm_index.ctp",
+		"/Users/Raymond/Sites/miner/jquery-1.10.2.js",
+		"/Users/Raymond/Sites/portfolio/grunt.js",
+		"/Users/Raymond/Sites/portfolio/Gruntfile.js",
+		"/Users/Raymond/Sites/yeoman/app/styles/compass/main.sass",
+		"/Users/Raymond/Sites/yeoman/app/styles/main.css",
+		"/Users/Raymond/Sites/qc2/app/Config/qc2.core.php",
+		"/Users/Raymond/Sites/qc2/app/Model/Trends.php",
+		"/Users/Raymond/Sites/qc2/app/Config/routes.php",
+		"/Users/Raymond/Sites/qc2/app/View/StudyTrends/dm_by_doctor.ctp",
+		"/Users/Raymond/Sites/qc2/app/Config/database.php",
+		"/Users/Raymond/Sites/qc2/app/Controller/ExportersController.php",
+		"/Users/Raymond/Sites/qc2/app/Model/Ranking.php",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/highcharts.js",
+		"/Users/Raymond/Sites/qc2/app/webroot/compare_mockup.html",
+		"/Users/Raymond/Sites/qc2/app/webroot/stats_mockup.html",
+		"/Users/Raymond/Sites/qc2/app/webroot/css/compass/grid-sizer.sass",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/grid-sizer.js",
+		"/Users/Raymond/Sites/qc2/app/Controller/CompareController.php",
+		"/Users/Raymond/Sites/qc2/app/webroot/css/compiled/grid-sizer.css",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/chart-manager.jquery.js",
+		"/Users/Raymond/Sites/qc2/app/Model/Response.php",
+		"/Users/Raymond/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/Raymond/Sites/qc2/app/Model/QuestionMultipleChoice.php",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/GlobalViews/dm_highchart.ctp",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/templates/dm-selected-table-view.html",
+		"/Users/Raymond/Sites/qc2/lib/Cake/Routing/Router.php",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/AdHoc/saved_searches.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/AdHoc/rules.ctp",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/dataRuleR.js",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/AdHoc/clinics.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/highcharts/dm_highcharts_json.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/highcharts/highcharts_json.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Trends/dm_by_patient.ctp",
+		"/Users/Raymond/Sites/qc2/app/Model/Role.php",
+		"/Users/Raymond/Sites/qc2/app/View/Helper/DMHelper.php",
+		"/Users/Raymond/Sites/qc2/app/Lib/Utilities.php",
+		"/Users/Raymond/Sites/qc2/app/Controller/ClinicsController.php",
+		"/Users/Raymond/Sites/qc2/app/Model/QuestionnaireTag.php",
+		"/Users/Raymond/Sites/qc2/app/Controller/QuestionnaireScoreController.php",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/modals/modal_confirm.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/lists/charts_list.ctp",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/QuestionnaireScoreQuestionResponse.js",
+		"/Users/Raymond/Sites/qc2/app/Controller/TrendsChartController.php",
+		"/Users/Raymond/Sites/qc2/app/View/Elements/highcharts/highcharts_container.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Exporters/csv/dm_tabulated.ctp",
+		"/Users/Raymond/Sites/qc2/app/webroot/css/compass/dm_main.sass",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/templates/dm-table-view.html",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/templates/selectedsummary/trendsByDoctor.html",
+		"/Users/Raymond/Sites/qc2/app/View/StudyTrends/dm_by_patient.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Trends/dm_by_specialty.ctp",
+		"/Users/Raymond/Sites/qc2/app/View/Trends/dm_by_doctor.ctp",
+		"/Users/Raymond/Sites/qc2/app/Controller/DoctorsController.php",
+		"/Users/Raymond/Sites/qc2/app/Model/QuestionnaireScore.php",
+		"/Users/Raymond/Sites/qc2/app/Controller/TrendsController.php",
+		"/Users/Raymond/Library/Application Support/Sublime Text 2/Packages/Phpcs/phpcs.sublime-settings",
+		"/Users/Raymond/Sites/qc2/app/Model/InstitutionRothman.php",
+		"/Users/Raymond/Sites/qc2/app/webroot/js/templates/ranking/byDoctor.html",
+		"/Users/Raymond/Sites/qc2/app/View/Clinics/qc_by_doctor.ctp",
+		"/Users/Raymond/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/Raymond/Dropbox/SCHOOL/MIZZOU Fall 2012/Unix/project12.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"center",
+			"getChartJSON",
+			"save_modal",
+			"format_for_highchart",
+			"format_for_highcharts",
+			"each",
+			"index",
+			"console.time('each doctors');\nindex",
+			"ROLE_DATA_VENDOR",
+			";",
+			"}",
+			"{",
+			"_.templ",
+			"tooltip",
+			"regression",
+			"doctor",
+			"patient",
+			"clinic",
+			"debug(",
+			"debug",
+			"byspecialty",
+			"QuestionnaireTag",
+			"questionnaire_tags",
+			"getDefaults",
+			"has data",
+			"archived_charts",
+			"Plot Graph",
+			"replace",
+			"window.open(",
+			"physiciansPatients",
+			"getScoreRange",
+			"THIS is NOT a valid response!!!!",
+			"_format_for_appt_highcharts",
+			"demo_InstitutionURS",
+			"No Data Available",
+			"id='loading",
+			"id=\"loading",
+			"response",
+			"Select the required <span class=\"required\">*</span> criteria to get started.",
+			"no data",
+			"console",
+			"hardcoded",
+			"partial",
+			"rgb(62, 87, 111)",
+			"chartTitleTemplate"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"rules",
+			"doctor",
+			"patient",
+			"0",
+			"RothmanInstitution",
+			"class='loading",
+			"class=\"loading"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 5144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5116,
+								5116
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2344.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "grid-sizer.js",
+					"settings":
+					{
+						"buffer_size": 9847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2826.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/grid-sizer.css",
+					"settings":
+					{
+						"buffer_size": 2725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"grid",
+				"app/webroot/css/compass/grid-sizer.sass"
+			],
+			[
+				"data",
+				"app/Config/database.php"
+			],
+			[
+				"qc2",
+				"app/Config/qc2.core.php"
+			],
+			[
+				"rou",
+				"app/Config/routes.php"
+			],
+			[
+				"dm",
+				"app/webroot/css/compass/dm_main.sass"
+			],
+			[
+				"datab",
+				"app/Config/database.php"
+			],
+			[
+				"q",
+				"app/Config/qc2.core.php"
+			],
+			[
+				"route",
+				"app/Config/routes.php"
+			],
+			[
+				"expor",
+				"app/Controller/ExportersController.php"
+			],
+			[
+				"regression",
+				"app/View/Helper/RegressionHelper.php"
+			],
+			[
+				"char",
+				"app/webroot/js/chart-manager.jquery.js"
+			],
+			[
+				"compar",
+				"app/Controller/CompareController.php"
+			],
+			[
+				"gri",
+				"app/webroot/js/grid-sizer.js"
+			],
+			[
+				"chart",
+				"app/webroot/js/chart-manager.jquery.js"
+			],
+			[
+				"questionmul",
+				"app/Model/QuestionMultipleChoice.php"
+			],
+			[
+				"routes",
+				"app/Config/routes.php"
+			],
+			[
+				"respons",
+				"app/Model/Response.php"
+			],
+			[
+				"dm_high",
+				"app/View/Elements/GlobalViews/dm_highchart.ctp"
+			],
+			[
+				"database",
+				"app/Config/database.php"
+			],
+			[
+				"json",
+				"app/View/Elements/highcharts/highcharts_json.ctp"
+			],
+			[
+				"rout",
+				"app/Config/routes.php"
+			],
+			[
+				"questionnairscore",
+				"app/Model/QuestionnaireScore.php"
+			],
+			[
+				"question",
+				"app/Controller/QuestionnaireScoreController.php"
+			],
+			[
+				"trend",
+				"app/Model/Trends.php"
+			],
+			[
+				"trends",
+				"app/Model/Trends.php"
+			],
+			[
+				"dm_by_patien",
+				"app/View/Trends/dm_by_patient.ctp"
+			],
+			[
+				"dm_by_doctor",
+				"app/View/Trends/dm_by_doctor.ctp"
+			],
+			[
+				"modal",
+				"app/View/Elements/modals/modal_confirm.ctp"
+			],
+			[
+				"charts",
+				"app/View/Elements/lists/charts_list.ctp"
+			],
+			[
+				"questionnairescoreq",
+				"app/webroot/js/QuestionnaireScoreQuestionResponse.js"
+			],
+			[
+				"qc2.",
+				"app/Config/qc2.core.php"
+			],
+			[
+				"highcharts_",
+				"app/View/Elements/highcharts/highcharts_container.ctp"
+			],
+			[
+				"dm_tab",
+				"app/View/Exporters/csv/dm_tabulated.ctp"
+			],
+			[
+				"dm_main",
+				"app/webroot/css/compass/dm_main.sass"
+			],
+			[
+				"dm-table",
+				"app/webroot/js/templates/dm-table-view.html"
+			],
+			[
+				"dm-sele",
+				"app/webroot/js/templates/dm-selected-table-view.html"
+			],
+			[
+				"q_by",
+				"app/View/Clinics/qc_by_doctor.ctp"
+			],
+			[
+				"dm_by_sp",
+				"app/View/Trends/dm_by_specialty.ctp"
+			],
+			[
+				"dm_by",
+				"app/View/StudyTrends/dm_by_patient.ctp"
+			],
+			[
+				"dm_bydo",
+				"app/View/StudyTrends/dm_by_doctor.ctp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
