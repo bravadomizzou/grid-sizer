@@ -6,7 +6,7 @@
  *
  * No Copyright or Licensing yet - Ray Holland raymondaholland@gmail.com
  *
- * Version: 0.0.28 (1/17/2014)
+ * Version: 0.0.29 (1/17/2014)
  * Requires: jQuery v[]
  *
  * licenced under []:
@@ -14,7 +14,6 @@
  */
 
 (function ( $ ) {
-
     var obj;
 
     var gs = function(element, options) {
@@ -31,7 +30,9 @@
             "droppable" : false
         }, options || {});
 
-        $(element).append(
+        $element = $(element);
+
+        $element.append(
             '<div class="gs-sizer-container">'+
                 '<div class="gs-view-container">'+
                     '<div class="gs-snap-container">'+
@@ -62,22 +63,22 @@
         /*obj.quadrants = {
             "1" : {
                 "id" : 1,
-                "selector" : $(element).find('.gs-view-container > .gs-q1'),
+                "selector" : $element.find('.gs-view-container > .gs-q1'),
                 "age" : 0
             },
             "2" : {
                 "id" : 2,
-                "selector" : $(element).find('.gs-view-container > .gs-q2'),
+                "selector" : $element.find('.gs-view-container > .gs-q2'),
                 "age" : 0
             },
             "3" : {
                 "id" : 3,
-                "selector" : $(element).find('.gs-view-container > .gs-q3'),
+                "selector" : $element.find('.gs-view-container > .gs-q3'),
                 "age" : 0
             },
             "4" : {
                 "id" : 4,
-                "selector" : $(element).find('.gs-view-container > .gs-q4'),
+                "selector" : $element.find('.gs-view-container > .gs-q4'),
                 "age" : 0
             }
         };
@@ -86,14 +87,14 @@
         
         //initialize all -identical
         if(obj.options.quadrants instanceof jQuery || typeof obj.options.quadrants === "string" || (typeof obj.options.quadrants === "object" && obj.options.quadrants.length === 1)) {
-                $(element).find('.gs-view-container > .gs-quadrant').append(obj.options.quadrants);
+                $element.find('.gs-view-container > .gs-quadrant').append(obj.options.quadrants);
                 if(obj.options.droppable)
-                    $(element).find('.gs-view-container > .gs-quadrant').droppable(obj.options.droppable);
+                    $element.find('.gs-view-container > .gs-quadrant').droppable(obj.options.droppable);
             }
         //initialize all -different
         else {
             for(var i=0; i<4; i++) {
-                var $currquad = $(element).find('.gs-view-container > .gs-q' + eval(i+1));
+                var $currquad = $element.find('.gs-view-container > .gs-q' + eval(i+1));
                 $currquad.append(obj.options.quadrants[i]);
                 if(obj.options.droppable)
                     $currquad.droppable(obj.options.droppable);
@@ -102,52 +103,52 @@
 
         obj.resize_quadrants = function(x, y) {
             //x & y relative to top-left corner of view-container
-            var $viewcontainer = $(element).find('.gs-view-container');
+            var $viewcontainer = $element.find('.gs-view-container');
             var height = y / parseInt($viewcontainer.css('height').split('px')[0], 10);
             var width = x / parseInt($viewcontainer.css('width').split('px')[0], 10);
-            $(element).find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q2').css('height', 100*(height)+'%');
-            $(element).find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q3').css('width', 100*(width)+'%');
+            $element.find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q2').css('height', 100*(height)+'%');
+            $element.find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q3').css('width', 100*(width)+'%');
             //fix display for when circle on top left edge
             if(x === 0) {
-                $(element).find('.gs-view-container > .gs-q3').css('height', '0%');
-                $(element).find('.gs-view-container > .gs-q4').css('height', 100*(1-height)+'%');
+                $element.find('.gs-view-container > .gs-q3').css('height', '0%');
+                $element.find('.gs-view-container > .gs-q4').css('height', 100*(1-height)+'%');
             }
             else {
-                $(element).find('.gs-view-container > .gs-q3, .gs-view-container > .gs-q4').css('height', 100*(1-height)+'%');
+                $element.find('.gs-view-container > .gs-q3, .gs-view-container > .gs-q4').css('height', 100*(1-height)+'%');
             }
-            $(element).find('.gs-view-container > .gs-q2, .gs-view-container > .gs-q4').css('width', 100*(1-width)+'%');
+            $element.find('.gs-view-container > .gs-q2, .gs-view-container > .gs-q4').css('width', 100*(1-width)+'%');
             console.log(height);
             console.log(width);
         };
         obj.inactive_crosshair = function(x, y) {
-            $(element).find('.gs-inactive > .gs-crosshair-x').css('left', x+'px');
-            $(element).find('.gs-inactive > .gs-crosshair-y').css('top', y+'px');
+            $element.find('.gs-inactive > .gs-crosshair-x').css('left', x+'px');
+            $element.find('.gs-inactive > .gs-crosshair-y').css('top', y+'px');
         };
-        $(element).find('.gs-quadrant-sizer').draggable({
+        $element.find('.gs-quadrant-sizer').draggable({
             drag: function(){
                 //do the black crosshair here
-                console.log($(element).find('.gs-quadrant-sizer').css('left'));
-                console.log($(element).find('.gs-quadrant-sizer').css('top'));
-                $(element).find('.gs-inactive, .gs-sizer-guide').css('display', 'block');
-                var $dot = $(element).find('.gs-quadrant-sizer');
-                var $q1 = $(element).find('.gs-quadrant-sizer > .gs-q1');
+                console.log($element.find('.gs-quadrant-sizer').css('left'));
+                console.log($element.find('.gs-quadrant-sizer').css('top'));
+                $element.find('.gs-inactive, .gs-sizer-guide').css('display', 'block');
+                var $dot = $element.find('.gs-quadrant-sizer');
+                var $q1 = $element.find('.gs-quadrant-sizer > .gs-q1');
                 var x = parseInt($dot.css('left').split('px')[0], 10) + 22;
                 var y = parseInt($dot.css('top').split('px')[0], 10) + 22;
                 obj.inactive_crosshair(x, y);
             },
             stop: function(){
-                $(element).find('.gs-inactive, .gs-sizer-guide').css('display', 'none');
-                var $dot = $(element).find('.gs-quadrant-sizer');
-                var $q1 = $(element).find('.gs-view-container > .gs-q1');
+                $element.find('.gs-inactive, .gs-sizer-guide').css('display', 'none');
+                var $dot = $element.find('.gs-quadrant-sizer');
+                var $q1 = $element.find('.gs-view-container > .gs-q1');
                 var x = parseInt($dot.css('left').split('px')[0], 10) + 22;
                 var y = parseInt($dot.css('top').split('px')[0], 10) + 22;
                 console.log(x + ', ' + y);
                 obj.resize_quadrants(x, y);
                 //convert top and left of quadrant-sizer to percentage (so it will auto-position when container is resized)
-                //$(this).css("left",parseInt($(this).css("left")) / ($(element).width() / 100)+"%");
-                //$(this).css("top",parseInt($(this).css("top")) / ($(element).height() / 100)+"%");
+                //$(this).css("left",parseInt($(this).css("left")) / ($element.width() / 100)+"%");
+                //$(this).css("top",parseInt($(this).css("top")) / ($element.height() / 100)+"%");
             },
-            containment: $(element).find('.gs-sizer-container'),
+            containment: $element.find('.gs-sizer-container'),
             snap: '.gs-snap-container > div, .gs-sizer-container',//this will also snap to other gridsizers that are right next to it :/
             snapMode: 'inner',
             snapTolerance: 45
