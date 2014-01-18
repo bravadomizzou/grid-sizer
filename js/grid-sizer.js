@@ -6,7 +6,7 @@
  *
  * No Copyright or Licensing yet - Ray Holland raymondaholland@gmail.com
  *
- * Version: 0.0.27 (1/17/2014)
+ * Version: 0.0.28 (1/17/2014)
  * Requires: jQuery v[]
  *
  * licenced under []:
