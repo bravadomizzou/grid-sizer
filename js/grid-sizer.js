@@ -59,7 +59,7 @@
             '</div>');
 
         //sending a value to setQuadrant without an index will place it in the old
-        obj.quadrants = {
+        /*obj.quadrants = {
             "1" : {
                 "id" : 1,
                 "selector" : $(element).find('.gs-view-container > .gs-q1'),
@@ -81,17 +81,25 @@
                 "age" : 0
             }
         };
-
+        */
         //set quadrant content, set droppable options object
-        for(var i=0; i<4; i++) {
-            var $currquad = $(element).find('.gs-view-container > .gs-q' + eval(i+1) + ' > .gs-q-container');
-            if(obj.options.quadrants.length === 1)
-                $currquad.append(obj.options.quadrants[0]);
-            else
+        
+        //initialize all -identical
+        if(obj.options.quadrants instanceof jQuery || typeof obj.options.quadrants === "string" || (typeof obj.options.quadrants === "object" && obj.options.quadrants.length === 1)) {
+                $(element).find('.gs-view-container > .gs-quadrant').append(obj.options.quadrants);
+                if(obj.options.droppable)
+                    $(element).find('.gs-view-container > .gs-quadrant').droppable(obj.options.droppable);
+            }
+        //initialize all -different
+        else {
+            for(var i=0; i<4; i++) {
+                var $currquad = $(element).find('.gs-view-container > .gs-q' + eval(i+1));
                 $currquad.append(obj.options.quadrants[i]);
-            if(obj.options.droppable)
-                $currquad.droppable(obj.options.droppable);
+                if(obj.options.droppable)
+                    $currquad.droppable(obj.options.droppable);
+            }
         }
+
         obj.resize_quadrants = function(x, y) {
             //x & y relative to top-left corner of view-container
             var $viewcontainer = $(element).find('.gs-view-container');
