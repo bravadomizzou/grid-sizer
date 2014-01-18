@@ -12,3 +12,4 @@
 9. some sort of js comment -> api documentation
 10. determine minimal jquery and jquery-ui versions
 11. determine browser compatibility
+12. set position of sizer circle (also have option to animate it)
