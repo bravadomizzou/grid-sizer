@@ -227,11 +227,4 @@
             }
         });
     };
-
-
 }( jQuery ));
-
-/*
-$('#test').gridsizer({});
-$('#test').gridsizer('setQuadrant',{}, 'arg2');
-*/
