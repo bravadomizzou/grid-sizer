@@ -95,8 +95,8 @@
         obj.resize_quadrants = function(x, y) {
             //x & y relative to top-left corner of view-container
             var $viewcontainer = $(element).find('.gs-view-container');
-            var height = y / parseInt($viewcontainer.css('height').split('px')[0]);
-            var width = x / parseInt($viewcontainer.css('width').split('px')[0]);
+            var height = y / parseInt($viewcontainer.css('height').split('px')[0], 10);
+            var width = x / parseInt($viewcontainer.css('width').split('px')[0], 10);
             $(element).find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q2').css('height', 100*(height)+'%');
             $(element).find('.gs-view-container > .gs-q1, .gs-view-container > .gs-q3').css('width', 100*(width)+'%');
             //fix display for when circle on top left edge
@@ -123,16 +123,16 @@
                 $(element).find('.gs-inactive, .gs-sizer-guide').css('display', 'block');
                 var $dot = $(element).find('.gs-quadrant-sizer');
                 var $q1 = $(element).find('.gs-quadrant-sizer > .gs-q1');
-                var x = parseInt($dot.css('left').split('px')[0]) + 22;
-                var y = parseInt($dot.css('top').split('px')[0]) + 22;
+                var x = parseInt($dot.css('left').split('px')[0], 10) + 22;
+                var y = parseInt($dot.css('top').split('px')[0], 10) + 22;
                 obj.inactive_crosshair(x, y);
             },
             stop: function(){
                 $(element).find('.gs-inactive, .gs-sizer-guide').css('display', 'none');
                 var $dot = $(element).find('.gs-quadrant-sizer');
                 var $q1 = $(element).find('.gs-view-container > .gs-q1');
-                var x = parseInt($dot.css('left').split('px')[0]) + 22;
-                var y = parseInt($dot.css('top').split('px')[0]) + 22;
+                var x = parseInt($dot.css('left').split('px')[0], 10) + 22;
+                var y = parseInt($dot.css('top').split('px')[0], 10) + 22;
                 console.log(x + ', ' + y);
                 obj.resize_quadrants(x, y);
                 //convert top and left of quadrant-sizer to percentage (so it will auto-position when container is resized)
@@ -188,11 +188,12 @@
         obj.getOldest = function(){
             //get the oldest quadrant, or the first one
             var ages = [];
-            for (var i = 1; i < 5; i++) {
+            var i;
+            for (i = 1; i < 5; i++) {
                 ages.push([i, obj.quadrants[i].age]);
             }
-            var oldest = ages.sort(function(a,b){return b[1] - a[1]});
-            for (var i = 1; i < 5; i++) {
+            var oldest = ages.sort(function(a,b){return b[1] - a[1];});
+            for (i = 1; i < 5; i++) {
                 if(obj.quadrants[i].age == oldest[3][1]){
                     oldest = i;
                     //obj.quadrants[i].age++;
