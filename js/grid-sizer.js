@@ -1,6 +1,6 @@
 /*
  * Grid Sizer - jQuery Plugin
- * UI to compare data quartered, side-by-side, stacked, or one-at-a-time
+ * UI to compare content quartered, side-by-side, stacked, or one-at-a-time
  *
  * Examples and documentation at: https://github.com/bravadomizzou/grid-sizer
  *
