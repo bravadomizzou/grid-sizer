@@ -6,7 +6,7 @@
  *
  * No Copyright or Licensing yet - Ray Holland raymondaholland@gmail.com
  *
- * Version: 0.0.29 (1/17/2014)
+ * Version: 0.0.30 (1/17/2014)
  * Requires: jQuery v[]
  *
  * licenced under []:
@@ -27,7 +27,8 @@
          */
         obj.options = $.extend({
             "quadrants" : [null, null, null, null],
-            "droppable" : false
+            "droppable" : false,
+            "snapTolerance" : 45
         }, options || {});
 
         $element = $(element);
@@ -151,7 +152,7 @@
             containment: $element.find('.gs-sizer-container'),
             snap: '.gs-snap-container > div, .gs-sizer-container',//this will also snap to other gridsizers that are right next to it :/
             snapMode: 'inner',
-            snapTolerance: 45
+            snapTolerance: obj.options.snapTolerance
         });
         /** possible function signatures:
          * sContent, iQuadrant, oOptions
