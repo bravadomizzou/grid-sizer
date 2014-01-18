@@ -3,158 +3,34 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/ico" href="favicon.ico">
     <title>Grid-Sizer</title>
-    <!--<link href="css/grid-sizer.css" rel="stylesheet">-->
+    <link href="css/grid-sizer.css" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <style>
-#sizer-container {
-    width: 444px;
-    height: 444px;
-    background-color: black;
-}
-#view-container {
-    width: 400px;
-    height: 400px;
-    //position: relative;
-    //top: 20px;
-    //left: 20px;
-    margin: 22px;
-    overflow: hidden;
-    position: absolute;
-}
-#inactive {
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    display: none;
-    position: absolute;
-    z-index: 3;
-}
-#sizer-guide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: none;
-    z-index: 3;
-    background-color: grey;
-}
-.crosshair {
-    position: relative;
-    z-index: 4;
-    background-color: black;
-}
-.guide-crosshair {
-    position: relative;
-    z-index: 4;
-    background-color: whitesmoke;
-}
-#crosshair-y, #guide-y {
-    width: 100%;
-    height: 1px;
-    top: 198px;
-}
-#crosshair-x, #guide-x {
-    height: 100%;
-    width: 1px;
-    left: 198px;
-}
-#guide-center {
-    top: -224px;
-    left: 177px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid whitesmoke;
-    position: relative;
-    z-index: 4;
-}
-#quadrant-sizer {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    z-index: 5;
-    top: 180px;
-    left: 180px;
-    cursor: move;
-    border: 2px solid grey;
-}
-.quadrant {
-    width: 50%;
-    height: 50%;
-    float: left;
-    z-index: 2;
-}
-
-#q1 {
-    background-color: blue;
-}
-#q2 {
-    background-color: green;
-}
-#q3 {
-    background-color: red;
-}
-#q4 {
-    background-color: yellow;
-}
-#snap-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-#snap-container > * {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-}
-#snap-center {
-    top: 180px;
-    left: 180px;
-}
-#snap-top {
-    top: -20px;
-    left: 180px;
-}
-#snap-bottom {
-    top: 380px;
-    left: 180px;
-}
-#snap-left {
-    top: 180px;
-    left: -20px;
-}
-#snap-right {
-    top: 180px;
-    left: 380px;
-}
-    </style>
 </head>
 <body>
-    <div id="sizer-container">
-        <div id="view-container">
-            <div id="snap-container">
-                <div id="snap-top"></div>
-                <div id="snap-bottom"></div>
-                <div id="snap-left"></div>
-                <div id="snap-right"></div>
-                <div id="snap-center"></div>
+    <div class="gs-sizer-container">
+        <div class="gs-view-container">
+            <div class="gs-snap-container">
+                <div class="gs-snap-top"></div>
+                <div class="gs-snap-bottom"></div>
+                <div class="gs-snap-left"></div>
+                <div class="gs-snap-right"></div>
+                <div class="gs-snap-center"></div>
             </div>
-            <div id="sizer-guide">
-                <div id="guide-y" class="guide-crosshair"></div>
-                <div id="guide-x" class="guide-crosshair"></div>
-                <div id="guide-center" class="guide-circle"></div>
+            <div class="gs-sizer-guide">
+                <div class="gs-guide-y gs-guide-crosshair"></div>
+                <div class="gs-guide-x gs-guide-crosshair"></div>
+                <div class="gs-guide-center gs-guide-circle"></div>
             </div>
-            <div id="inactive">
-                <div id="crosshair-y" class="crosshair"></div>
-                <div id="crosshair-x" class="crosshair"></div>
+            <div class="gs-inactive">
+                <div class="gs-crosshair-y gs-crosshair"></div>
+                <div class="gs-crosshair-x gs-crosshair"></div>
             </div>
-            <div id="quadrant-sizer"><div class="move-icon"></div></div>
-            <div class="quadrant" id="q1"></div>
-            <div class="quadrant" id="q2"></div>
-            <div class="quadrant" id="q3"></div>
-            <div class="quadrant" id="q4"></div>
+            <div class="gs-quadrant-sizer"><div class="gs-move-icon"></div></div>
+            <div class="gs-q1 gs-quadrant"></div>
+            <div class="gs-q2 gs-quadrant"></div>
+            <div class="gs-q3 gs-quadrant"></div>
+            <div class="gs-q4 gs-quadrant"></div>
         </div>
     </div>
 
@@ -164,50 +40,50 @@
 
 function resize_quadrants(x, y) {
     //x & y relative to top-left corner of view-container
-    var viewcontainer = $('#view-container');
+    var viewcontainer = $('.gs-view-container');
     var height = y / parseInt(viewcontainer.css('height').split('px')[0]);
     var width = x / parseInt(viewcontainer.css('width').split('px')[0]);
-    $('#q1, #q2').css('height', 100*(height)+'%');
-    $('#q1, #q3').css('width', 100*(width)+'%');
+    $('.gs-q1, .gs-q2').css('height', 100*(height)+'%');
+    $('.gs-q1, .gs-q3').css('width', 100*(width)+'%');
     //fix display for when circle on top left edge
     if(x == 0) {
-        $('#q3').css('height', '0%');
-        $('#q4').css('height', 100*(1-height)+'%');
+        $('.gs-q3').css('height', '0%');
+        $('.gs-q4').css('height', 100*(1-height)+'%');
     }
     else {
-        $('#q3, #q4').css('height', 100*(1-height)+'%');
+        $('.gs-q3, .gs-q4').css('height', 100*(1-height)+'%');
     }
-    $('#q2, #q4').css('width', 100*(1-width)+'%');
+    $('.gs-q2, .gs-q4').css('width', 100*(1-width)+'%');
     console.log(height);
     console.log(width);
 }
 function inactive_crosshair(x, y) {
-    $('#crosshair-x').css('left', x+'px');
-    $('#crosshair-y').css('top', y+'px');
+    $('.gs-crosshair-x').css('left', x+'px');
+    $('.gs-crosshair-y').css('top', y+'px');
 }
-$('#quadrant-sizer').draggable({
+$('.gs-quadrant-sizer').draggable({
     drag: function(){
         //do the black crosshair here
-        console.log($('#quadrant-sizer').css('left'));
-        console.log($('#quadrant-sizer').css('top'));
-        $('#inactive, #sizer-guide').css('display', 'block');
-        var $dot = $('#quadrant-sizer');
-        var $q1 = $('#q1');
+        console.log($('.gs-quadrant-sizer').css('left'));
+        console.log($('.gs-quadrant-sizer').css('top'));
+        $('.gs-inactive, .gs-sizer-guide').css('display', 'block');
+        var $dot = $('.gs-quadrant-sizer');
+        var $q1 = $('.gs-q1');
         var x = parseInt($dot.css('left').split('px')[0]) + 22;
         var y = parseInt($dot.css('top').split('px')[0]) + 22;
         inactive_crosshair(x, y);
     },
     stop: function(){
-        $('#inactive, #sizer-guide').css('display', 'none');
-        var $dot = $('#quadrant-sizer');
-        var $q1 = $('#q1');
+        $('.gs-inactive, .gs-sizer-guide').css('display', 'none');
+        var $dot = $('.gs-quadrant-sizer');
+        var $q1 = $('.gs-q1');
         var x = parseInt($dot.css('left').split('px')[0]) + 22;
         var y = parseInt($dot.css('top').split('px')[0]) + 22;
         console.log(x + ', ' + y);
         resize_quadrants(x, y);
     },
-    containment: '#sizer-container',
-    snap: '#snap-container > div, #sizer-container',
+    containment: '.gs-sizer-container',
+    snap: '.gs-snap-container > div, .gs-sizer-container',
     snapMode: 'inner',
     snapTolerance: 60
 });
